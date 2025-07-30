@@ -1,0 +1,252 @@
+/* Custom CSS replacing W3.CSS */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation bar */
+  .navbar {
+    background-color: #000;
+    overflow: hidden;
+    display: none;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navbar a.right {
+    float: right;
+  }
+  
+  /* Main content container */
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 48px 16px;
+    background-color: white;
+  }
+  
+  .tag {
+    display: inline-block;
+    padding: 0 8px;
+    background-color: #000;
+    color: white;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  
+  /* Image header */
+  .image-header {
+    position: relative;
+    margin-bottom: 16px;
+  }
+  
+  .image-header img {
+    width: 100%;
+    vertical-align: middle;
+  }
+  
+  .image-header-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 32px;
+    color: white;
+  }
+  
+  /* Grid layout */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 0;
+  }
+  
+  .col-l8 { flex: 66.66%; max-width: 66.66%; padding: 0 8px; }
+  .col-l4 { flex: 33.33%; max-width: 33.33%; padding: 0 8px; }
+  
+  /* Blog entries */
+  .blog-entry {
+    background-color: white;
+    margin-bottom: 16px;
+    padding: 32px;
+  }
+  
+  .blog-entry img {
+    width: 100%;
+    padding: 16px 0;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .justify {
+    text-align: justify;
+  }
+  
+  /* Buttons */
+  .button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .button-black {
+    color: white;
+    background-color: #000;
+  }
+  
+  .button-white {
+    color: black;
+    background-color: white;
+    border: 1px solid #ccc;
+  }
+  
+  .button-red {
+    color: white;
+    background-color: #f44336;
+  }
+  
+  .button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Left and right alignment */
+  .left { float: left !important; }
+  .right { float: right !important; }
+  
+  /* Clear floats */
+  .clear {
+    clear: both;
+  }
+  
+  /* Tags */
+  .tag {
+    display: inline-block;
+    padding: 0 8px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .tag-black {
+    background-color: #000;
+    color: white;
+  }
+  
+  .tag-light-grey {
+    background-color: #f1f1f1;
+    color: #000;
+  }
+  
+  /* Lists */
+  .ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .li {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 32px;
+    max-width: 600px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #616161;
+    color: white;
+    padding: 32px;
+    text-align: center;
+  }
+  
+  .footer a {
+    color: white;
+  }
+  
+  /* Utility classes */
+  .margin-bottom { margin-bottom: 16px !important; }
+  .padding-large { padding: 32px !important; }
+  .padding-16 { padding: 16px !important; }
+  .padding-8 { padding: 8px !important; }
+  
+  /* Responsive layout */
+  @media screen and (max-width: 992px) {
+    .col-l8, .col-l4 {
+      flex: 100%;
+      max-width: 100%;
+    }
+    
+    .navbar {
+      display: none;
+    }
+  }
+  
+  /* Show/hide comments */
+  .show {
+    display: block !important;
+  }
+  
+  .hide {
+    display: none !important;
+  }

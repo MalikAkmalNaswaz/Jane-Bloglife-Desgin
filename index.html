@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ 
+<!-- Navigation bar with social media icons -->
+<div class="navbar">
+    <a href="#"><i class="fa fa-facebook-official"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-snapchat"></i></a>
+    <a href="#"><i class="fa fa-flickr"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="right"><i class="fa fa-search"></i></a>
+  </div>
+    
+  <!-- Main container -->
+  <div class="container">
+  
+    <!-- Header -->
+    <header class="header">
+      <h1 style="font-size: 48px;"><b>JANE BLOGLIFE</b></h1>
+      <h6>Welcome to the blog of <span class="tag">Jane's world</span></h6>
+    </header>
+  
+    <!-- Image header -->
+    <header class="image-header" id="home">
+      <img src="./Assets/jane.jpg" alt="Fashion Blog" width="1600" height="1060">
+      <div class="image-header-content">
+        <h1 class="text-white">Jane's</h1>
+        <h1 class="hide-small" style="font-size: 64px;"><b>FASHION BLOG</b></h1>
+        <h6><button class="button button-white" style="padding: 16px; font-size: 18px;" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+      </div>
+    </header>
+  
+    <!-- Grid -->
+    <div class="row">
+  
+      <!-- Blog entries -->
+      <div class="col-l8">
+      
+        <!-- Blog entry -->
+        <div class="blog-entry">
+          <div class="center">
+            <h3>TITLE HEADING</h3>
+            <h5>Title description, <span style="opacity: 0.6;">May 2, 2016</span></h5>
+          </div>
+  
+          <div class="justify">
+            <img src="./Assets/avatar_hat.jpg" alt="Girl Hat" style="width:100%" class="padding-16">
+            <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
+              magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p class="left"><button class="button button-white" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+            <p class="right"><button class="button button-black" onclick="toggleFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="tag tag-light-grey">1</span></button></p>
+            <p class="clear"></p>
+            <div class="row margin-bottom hide" id="demo1">
+              <hr>
+                <div style="flex: 16.66%; max-width: 16.66%; padding: 0 8px;">
+                  <img src="./Assets/avatar_smoke.jpg" style="width:90px;">
+                </div>
+                <div style="flex: 83.33%; max-width: 83.33%; padding: 0 8px;">
+                  <h4>George <span style="opacity: 0.6; font-size: 14px;">May 3, 2015, 6:32 PM</span></h4>
+                  <p>Great blog post! Following</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+  
+        <!-- Blog entry -->
+        <div class="blog-entry">
+          <div class="center">
+            <h3>TITLE HEADING</h3>
+            <h5>Title description, <span style="opacity: 0.6;">April 23, 2016</span></h5>
+          </div>
+  
+          <div class="justify">
+            <img src="./Assets/man_hat.jpg" alt="Men in Hats" style="width:100%" class="padding-16">
+            <p><strong>Hats!</strong> The trend this summer is hats for men!</p>
+            <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
+              mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p class="left"><button class="button button-white" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+            <p class="right"><button class="button button-black" onclick="toggleFunction('demo2')"><b>Replies  </b> <span class="tag tag-light-grey">2</span></button></p>
+            <p class="clear"></p>
+            
+            <!-- Example of comment field -->
+            <div id="demo2" class="hide">
+              <div class="row">
+                <hr>
+                <div style="flex: 16.66%; max-width: 16.66%; padding: 0 8px;">
+                  <img src="./Assets/runway.jpg" style="width:90px;">
+                </div>
+                <div style="flex: 83.33%; max-width: 83.33%; padding: 0 8px;">
+                  <h4>Amber <span style="opacity: 0.6; font-size: 14px;">April 26, 2015, 10:52 PM</span></h4>
+                  <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+                </div>
+              </div>
+              <div class="row margin-bottom">
+                <div style="flex: 16.66%; max-width: 16.66%; padding: 0 8px;">
+                  <img src="./Assets/team1.jpg" style="width:90px;">
+                </div>
+                <div style="flex: 83.33%; max-width: 83.33%; padding: 0 8px;">
+                  <h4>Angie <span style="opacity: 0.6; font-size: 14px;">April 23, 2015, 9:12 PM</span></h4>
+                  <p>Love hats!!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Blog entry -->
+        <div class="blog-entry">
+          <div class="center">
+            <h3>TITLE HEADING</h3>
+            <h5>Title description, <span style="opacity: 0.6;">April 7, 2016</span></h5>
+          </div>
+  
+          <div class="justify">
+            <img src="/w3images/runway.jpg" alt="Runway" style="width:100%" class="padding-16">
+            <p><strong>Dont miss!</strong> The runway in New York City this weekend is gonna be legendary!</p>
+            <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
+              mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p class="left"><button class="button button-white" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+            <p class="right"><button class="button button-black" onclick="toggleFunction('demo3')"><b>Replies  </b> <span class="tag tag-light-grey">3</span></button></p>
+            <p class="clear"></p>
+            
+            <!-- Example of comment field -->
+            <div id="demo3" class="hide">
+              <hr>
+              <div class="row margin-bottom">
+                <div style="flex: 16.66%; max-width: 16.66%; padding: 0 8px;">
+                  <img src="./Assets/workshop.jpg" style="width:90px;">
+                </div>
+                <div style="flex: 83.33%; max-width: 83.33%; padding: 0 8px;">
+                  <h4>Jane <span style="opacity: 0.6; font-size: 14px;">April 10, 2015, 7:22 PM</span></h4>
+                  <p>That was a great runway show! Thanks for everything.</p>
+                </div>
+              </div>
+              <div class="row margin-bottom">
+                <div style="flex: 16.66%; max-width: 16.66%; padding: 0 8px;">
+                  <img src="./Assets/jane.jpg" style="width:90px;">
+                </div>
+                <div style="flex: 83.33%; max-width: 83.33%; padding: 0 8px;">
+                  <h4>John <span style="opacity: 0.6; font-size: 14px;">April 8, 2015, 10:32 PM</span></h4>
+                  <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+              </div>
+              <div class="row margin-bottom">
+                <div style="flex: 16.66%; max-width: 16.66%; padding: 0 8px;">
+                  <img src="./Assets/girl_hat.jpg" style="width:90px;">
+                </div>
+                <div style="flex: 83.33%; max-width: 83.33%; padding: 0 8px;">
+                  <h4>Anja <span style="opacity: 0.6; font-size: 14px;">April 7, 2015, 9:12 PM</span></h4>
+                  <p>Cant wait for the runway to start!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      <!-- END BLOG ENTRIES -->
+      </div>
+  
+      <!-- About/Information menu -->
+      <div class="col-l4">
+        <!-- About Card -->
+        <div style="background-color: white; margin-bottom: 16px;">
+          <img src="./Assets/avatar_girl2.jpg" alt="Jane" style="width:100%; filter: grayscale(100%);">
+          <div style="padding: 16px; background-color: black; color: white;">
+            <h4>My Name</h4>
+            <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+          </div>
+        </div>
+        <hr>
+  
+        <!-- Posts -->
+        <div style="background-color: white; margin-bottom: 16px;">
+          <div style="padding: 16px; background-color: black; color: white;">
+            <h4>Popular Posts</h4>
+          </div>
+          <ul style="list-style-type: none; padding: 0; margin: 0; background-color: white;">
+            <li style="padding: 16px; border-bottom: 1px solid #ddd;">
+              <img src="./Assets/avatar_smoke.jpg" alt="Image" style="float: left; width:50px; margin-right: 16px;">
+              <span style="font-size: 18px;">Denim</span>
+              <br>
+              <span>Sed mattis nunc</span>
+            </li>
+            <li style="padding: 16px; border-bottom: 1px solid #ddd;">
+              <img src="./Assets/bandmember.jpg" alt="Image" style="float: left; width:50px; margin-right: 16px;">
+              <span style="font-size: 18px;">Sweaters</span>
+              <br>
+              <span>Praes tinci sed</span>
+            </li>
+            <li style="padding: 16px; border-bottom: 1px solid #ddd;">
+              <img src="./Assets/workshop.jpg" alt="Image" style="float: left; width:50px; margin-right: 16px;">
+              <span style="font-size: 18px;">Workshop</span>
+              <br>
+              <span>Ultricies congue</span>
+            </li>
+            <li style="padding: 16px; border-bottom: 1px solid #ddd;">
+              <img src="./Assets/avatar_smoke.jpg" alt="Image" style="float: left; width:50px; margin-right: 16px; filter: sepia(100%);">
+              <span style="font-size: 18px;">Trends</span>
+              <br>
+              <span>Lorem ipsum dipsum</span>
+            </li>
+          </ul>
+        </div>
+        <hr>
+  
+        <!-- Advertising -->
+        <div style="background-color: white; margin-bottom: 16px;">
+          <div style="padding: 16px; background-color: black; color: white;">
+            <h4>Advertise</h4>
+          </div>
+          <div style="padding: 16px; background-color: white;">
+            <div style="padding: 16px; background-color: #f1f1f1; height:200px; position: relative;">
+              <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Your AD Here</span>
+            </div>
+          </div>
+        </div>
+        <hr>
+  
+        <!-- Tags -->
+        <div style="background-color: white; margin-bottom: 16px;">
+          <div style="padding: 16px; background-color: black; color: white;">
+            <h4>Tags</h4>
+          </div>
+          <div style="padding: 16px; background-color: white;">
+            <p>
+              <span class="tag tag-black">Fashion</span> 
+              <span class="tag tag-light-grey">New York</span> 
+              <span class="tag tag-light-grey">London</span>
+              <span class="tag tag-light-grey">Hats</span> 
+              <span class="tag tag-light-grey">Norway</span> 
+              <span class="tag tag-light-grey">Sweaters</span>
+              <span class="tag tag-light-grey">Ideas</span> 
+              <span class="tag tag-light-grey">Deals</span> 
+              <span class="tag tag-light-grey">Accessories</span>
+              <span class="tag tag-light-grey">News</span> 
+              <span class="tag tag-light-grey">Clothing</span> 
+              <span class="tag tag-light-grey">Shopping</span>
+              <span class="tag tag-light-grey">Jeans</span> 
+              <span class="tag tag-light-grey">Trends</span>
+            </p>
+          </div>
+        </div>
+        <hr>
+  
+        <!-- Inspiration -->
+        <div style="background-color: white; margin-bottom: 16px;">
+          <div style="padding: 16px; background-color: black; color: white;">
+            <h4>Inspiration</h4>
+          </div>
+          <div style="padding: 16px; background-color: white; display: flex; flex-wrap: wrap;">
+            <div style="flex: 50%; max-width: 50%; padding: 0 8px;">
+              <p><img src="./Assets/jeans.jpg" alt="Jeans" style="width:100%"></p>
+              <p><img src="./Assets/team1.jpg" alt="Jeans" style="width:100%"></p>
+            </div>
+            <div style="flex: 50%; max-width: 50%; padding: 0 8px;">
+              <p><img src="./Assets/avatar_smoke.jpg" alt="Men in Hats" style="width:100%; filter: grayscale(100%);"></p>
+              <p><img src="./Assets/avatar_girl2.jpg" alt="Jeans" style="width:100%"></p>
+           </div>
+          </div>
+        </div>
+        <hr>
+  
+        <div style="background-color: white; margin-bottom: 16px;">
+          <div style="padding: 16px; background-color: black; color: white;">
+            <h4>Follow Me</h4>
+          </div>
+          <div style="padding: 16px; font-size: 24px;">
+            <i class="fa fa-facebook-official" style="opacity: 0.6;"></i>
+            <i class="fa fa-instagram" style="opacity: 0.6;"></i>
+            <i class="fa fa-snapchat" style="opacity: 0.6;"></i>
+            <i class="fa fa-pinterest-p" style="opacity: 0.6;"></i>
+            <i class="fa fa-twitter" style="opacity: 0.6;"></i>
+            <i class="fa fa-linkedin" style="opacity: 0.6;"></i>
+          </div>
+        </div>
+        <hr>
+        
+        <!-- Subscribe -->
+        <div style="background-color: white; margin-bottom: 16px;">
+          <div style="padding: 16px; background-color: black; color: white;">
+            <h4>Subscribe</h4>
+          </div>
+          <div style="padding: 16px; background-color: white;">
+            <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+            <p><input style="width: 100%; padding: 8px; border: 1px solid #ccc;" type="text" placeholder="Enter e-mail"></p>
+            <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="button button-red" style="width: 100%;">Subscribe</button></p>
+          </div>
+        </div>
+  
+      <!-- END About/Intro Menu -->
+      </div>
+  
+    <!-- END GRID -->
+    </div>
+  
+  <!-- END container -->
+  </div>
+  
+  <!-- Subscribe Modal -->
+  <div id="subscribe" class="modal">
+    <div class="modal-content" style="padding:32px">
+      <div style="padding: 16px; background-color: white;">
+        <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove" style="float: right; font-size: 24px; cursor: pointer;"></i>
+        <h2 style="text-align: center; letter-spacing: 4px;">SUBSCRIBE</h2>
+        <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+        <p><input style="width: 100%; padding: 8px; border: 1px solid #ccc;" type="text" placeholder="Enter e-mail"></p>
+        <button type="button" class="button button-red" style="width: 100%; padding: 16px; margin-bottom: 16px;" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer style="padding:32px; background-color: #616161; color: white; text-align: center;">
+    <a href="#" class="button button-black" style="padding: 16px; margin-bottom: 16px;"><i class="fa fa-arrow-up" style="margin-right: 8px;"></i>To the top</a>
+    <p>Powered by <a href="#" target="_blank">Malik Akmal Nawaz</a></p>
+  </footer>
+   
+</body>
+</html>
